@@ -10,7 +10,7 @@ def display_current_datetime():
 def calculate_future_date():
     """Calculates and displays the future date based on user input."""
     try:
-        days_to_add = int(input("Enter the number of days to add: "))
+        days_to_add = int(input("Enter the number of days to add to current date: "))
         current_date = datetime.now()
         future_date = current_date + timedelta(days=days_to_add)
         formatted_future_date = future_date.strftime("%Y-%m-%d")
